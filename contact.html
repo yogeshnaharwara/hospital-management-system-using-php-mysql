@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8">
+  <title>Contact Us - Khaitan Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #0077cc;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .contact-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+      padding: 30px;
+      flex: 1 1 400px;
+      transition: transform 0.2s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-card h2 {
+      font-size: 24px;
+      color: #0077cc;
+      margin-bottom: 20px;
+    }
+
+    .contact-card p {
+      margin-bottom: 12px;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #005fa3;
+    }
+
+    iframe {
+      width: 100%;
+      height: 280px;
+      border: none;
+      margin: 30px 0;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0077cc;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+  <div class="container nav-container">
+    <h1 class="logo">Khaitan <span>Hospital</span></h1>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="userpannel.php" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.php">Doctors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="appointment.php" class="btn-appoint">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <header>
+    <h1>Contact Khaitan Hospital</h1>
+    <p>We're here to assist you 24/7. Reach out anytime.</p>
+  </header>
+
+  <div class="contact-section">
+    <!-- Contact Info -->
+    <div class="contact-card">
+      <h2>Reach Us</h2>
+      <p><strong>📍 Address:</strong>  Khaitan hospital, near RTO, Jhalana doongari, Jaipur, Rajasthan 302004</p>
+      <p><strong>📞 Phone:</strong> +91 7742476561</p>
+      <p><strong>✉️ Email:</strong> contact@khaitanhospital.com</p>
+      <p><strong>🌐 Follow Us:</strong> Facebook | Instagram | LinkedIn</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-card contact-form">
+      <h2>Send a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <div style="max-width: 1200px; margin: auto; padding: 0 20px;">
+    <iframe src="https://www.google.com/maps?q=jaipur%20rajasthan&output=embed" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    &copy; 2025 Khaitan Hospital | All Rights Reserved
+  </footer>
+
+</body>
+</html>

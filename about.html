@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Khaitan Hospital</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #ffffff;
+    }
+
+    .main-header {
+      background-color: #004aad;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .main-nav .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .main-nav .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .main-nav .nav-links a:hover,
+    .main-nav .nav-links .active {
+      background-color: #003080;
+    }
+
+    .btn-appoint {
+      background-color: #1f3375;
+      color: #004aad;
+      font-weight: bold;
+    }
+
+    /* About Section */
+    .about-content {
+      background-color: #f0f4ff;
+      padding: 60px 20px;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about-img {
+      flex: 1;
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      font-size: 2.2rem;
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    /* Vision & Mission Section */
+    .vision-section {
+      background-color: #fff;
+      padding: 60px 20px;
+    }
+
+    .vision-container {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .vision-container h3 {
+      font-size: 1.8rem;
+      color: #004aad;
+      margin-bottom: 15px;
+    }
+
+    .vision-container p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #004aad;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+      }
+
+      .about-text h2 {
+        text-align: center;
+      }
+
+      .about-text,
+      .about-img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header class="main-header">
+    <div class="header-container">
+      <h1 class="logo">Khaitan Hospital</h1>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="userpannel.php">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.php">Doctors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="appointment.php" class="btn-appoint">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Info Section -->
+  <section class="about-content">
+    <div class="about-container">
+      <!-- Image Left -->
+      <div class="about-img">
+        <img src="hospital1_img.jpg" alt="Our Team">
+      </div>
+      
+      <!-- Text Right -->
+      <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>
+          Khaitan Hospital is a multispecialty healthcare institution dedicated to providing exceptional care through innovation, compassion, and excellence. Our commitment is to your health and well-being, guided by a legacy of trust and service.
+        </p>
+        <p>
+          We bring together top doctors, advanced technologies, and patient-centered services across departments like Neurology, Cardiology, Orthopedics, Dentistry, and General Medicine.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="vision-section">
+    <div class="vision-container">
+      <h3>Our Vision</h3>
+      <p>
+        To become the leading healthcare destination recognized for quality care, innovation, and patient trust.
+      </p>
+
+      <h3>Our Mission</h3>
+      <p>
+        ● Deliver ethical and affordable healthcare<br>
+        ● Embrace advanced medical technologies<br>
+        ● Prioritize patient comfort and long-term relationships
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Khaitan Hospital. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

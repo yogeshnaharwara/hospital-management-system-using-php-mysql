@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khaitan Hospital - Services</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: #007bff;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0056b3;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .services-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      margin: 10px 0;
+      font-size: 1.3em;
+      color: #007bff;
+    }
+
+    .service-card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Khaitan Hospital</h1>
+  </header>
+
+  <nav>
+    <a href="userpannel.php">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.php">Doctors</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Emergency">
+        <h3>Emergency Services</h3>
+        <p>24x7 emergency services with rapid response and expert care.</p>
+      </a>
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4087/4087550.png" alt="Outpatient">
+        <h3>Outpatient Services</h3>
+        <p>Efficient outpatient department with minimal wait time.</p>
+      </a>
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965562.png" alt="Inpatient">
+        <h3>Inpatient Services</h3>
+        <p>Modern wards and private rooms with personalized care.</p>
+      </a>
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2674/2674076.png" alt="Diagnostic">
+        <h3>Diagnostic Services</h3>
+        <p>Advanced MRI, CT scan, ultrasound, and lab tests.</p>
+      </a>
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965563.png" alt="Pharmacy">
+        <h3>Pharmacy</h3>
+        <p>On-site pharmacy for all prescribed medications.</p>
+      </a>
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3195/3195584.png" alt="Cafeteria">
+        <h3>Cafeteria</h3>
+        <p>Food services available for patients and visitors.</p>
+      </a>
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" alt="24x7 Care">
+        <h3>24x7 Personal Treatment</h3>
+        <p>Round-the-clock dedicated medical care.</p>
+      </a>
+      <a href="contact.html" class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3163/3163831.png" alt="Home Services">
+        <h3>Home Check-Up Services</h3>
+        <p>Consultations and check-ups at your doorstep.</p>
+      </a>
+    </div>
+  </section>
+</body>
+
+</html>
